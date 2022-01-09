@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Indie Flower', cursive;
+  font-size: 12px;
+  background-image: url(img/background.jpg);
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 50px 0;
+}
+
+section .container {
+  width: 70%;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 40px;
+}
+
+section .container header h1 {
+  font-size: 4rem;
+  color: rgb(253, 251, 251);
+}
+
+section .container header p {
+  font-size: 2rem;
+  color: rgb(253, 251, 251);
+  margin-bottom: 30px;
+}
+
+section .container form {
+  display: flex;
+  margin: 15px 0 50px 110px;
+}
+
+section .container form input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+section .container form #search {
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: slategray;
+  color: #fff;
+}
+
+section .container h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(253, 251, 251);
+}
+
+section .container .search-result {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  gap: 30px;
+  grid-template: auto/ repeat(auto-fit, minmax(300px, 1fr));
+}
+
+section .container .search-result .item {
+  width: 100%;
+  border-radius: 10px;
+  background-color: slategray;
+  padding: 15px;
+  overflow: hidden;
+}
+
+section .container .search-result .item #gItem {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+section .container .search-result .item .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .container .search-result .item .flex-container .title {
+  color: #eee;
+  margin: 20px 10px 0 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+section .container .search-result .item .flex-container .v-button {
+  text-decoration: none;
+  text-align: center;
+  width: 120px;
+  padding: 10px 5px;
+  background-color: #eee;
+  color: #000;
+  font-size: 1rem;
+  margin: 20px;
+  align-self: start;
+}
+
+section .container .search-result .item .item-data {
+  color: #eee;
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-transform: capitalize;
+}

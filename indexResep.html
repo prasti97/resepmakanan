@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <header>
+          <h1>Recipe Food's</h1>
+          <p>Find Food Recipes From Ingredients</p>
+        </header>
+        <form onsubmit="return false">
+          <input type="text" placeholder="Search Your Recipe..." />
+          <button id="search" onclick="findFoods()">Search</button>
+        </form>
+        <h2>Search Result :</h2>
+        <div class="search-result"></div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
